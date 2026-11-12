@@ -4,15 +4,6 @@ Repositório template da disciplina de **Desenvolvimento Mobile**, estruturado n
 
 ---
 
-## 🚀 Como executar o projeto no Codespaces
-
-1. Clique no botão verde **Use this template** $\rightarrow$ **Open in a codespace**.
-2. Aguarde o carregamento do ambiente Flutter (cerca de 1 a 2 minutos na primeira inicialização).
-3. Pressione a tecla **F5** (ou clique no menu *Run > Start Debugging*).
-4. O aplicativo será compilado como servidor web e aberto automaticamente na aba de visualização interna na porta `8080`.
-
----
-
 ## 📂 Estrutura de Pastas (Arquitetura MVVM)
 
 O código-fonte dentro da pasta `lib/` segue a separação de responsabilidades do padrão **MVVM**:
@@ -36,3 +27,20 @@ lib/
 │   └── editor_view.dart              # Tela de criação e edição de documentos (/editor)
 └── utils/                            # Utilitários reutilizáveis
     └── validadores.dart              # Validações de formulário (Nome, E-mail estrito e Senha)
+
+---
+
+## 🚀 Como executar o projeto no Codespaces
+
+1. Clique no botão verde **Use this template** $\rightarrow$ **Open in a codespace**.
+2. Aguarde o carregamento do ambiente Flutter (cerca de 1 a 2 minutos na primeira inicialização).
+3. Pressione a tecla **F5** (ou clique no menu *Run > Start Debugging*).
+4. O aplicativo será compilado como servidor web e aberto automaticamente na aba de visualização interna na porta `8080`.
+
+---
+
+Caso tiver apenas o devcontainer.json, ao abrir o codespaces e clicar em "trust folders" para confiar nas pastas. Aplique os seguintes comandos:
+
+1. flutter create . --project-name edit_doc_flutter                 #aqui é pra criar o projeto
+2. flutter pub add shared_preferences                               #este  comando é para add o pacote do shared_preferences
+3. mkdir -p lib/models/services lib/viewmodels lib/views lib/utils  #criar a estrutura de pastas da arquitetura MVVM

@@ -8,6 +8,7 @@
       "onAutoForward": "openPreview"
     }
   },
+  "postCreateCommand": "flutter pub get",
   "customizations": {
     "vscode": {
       "extensions": [
