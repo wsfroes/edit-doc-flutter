@@ -1,4 +1,4 @@
-# 📱 Aplicativo de Leitura e Edição de Documentos (Flutter - MVVM)
+# 📱 App de Leitura e Edição de Documentos (Flutter - MVVM)
 
 Repositório template da disciplina de **Desenvolvimento Mobile**, estruturado na arquitetura **MVVM (Model-View-ViewModel)** e preparado para rodar no **GitHub Codespaces** com persistência local (`shared_preferences`) e operações CRUD.
 
